@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="EVA2_EXAMEN_PRACTICO">
+  <ClassDiagramComponents>
+    <Class name="EVA2_EXAMEN_PRACTICO" package="eva2_examen_practico" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="imprimirDatos" returnType="void" visibility="public" isStatic="true">
+          <Argument type="Empleados" name="empleado"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="Captura" package="problema_1" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Methods>
+        <Method name="getV0" returnType="double" visibility="public"/>
+        <Method name="setV0" returnType="void" visibility="public">
+          <Argument type="double" name="v0"/>
+        </Method>
+        <Method name="getVF" returnType="double" visibility="public"/>
+        <Method name="setVF" returnType="void" visibility="public">
+          <Argument type="double" name="vf"/>
+        </Method>
+        <Method name="getA" returnType="double" visibility="public"/>
+        <Method name="setA" returnType="void" visibility="public">
+          <Argument type="double" name="a"/>
+        </Method>
+        <Method name="getT" returnType="double" visibility="public"/>
+        <Method name="setT" returnType="void" visibility="public">
+          <Argument type="double" name="t"/>
+        </Method>
+      </Methods>
+    </Interface>
+    <Class name="Formula1" package="problema_1" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="V0"/>
+          <Argument type="double" name="VF"/>
+          <Argument type="double" name="A"/>
+          <Argument type="double" name="T"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="CalcularDistancia" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Formula2" package="problema_1" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="V0"/>
+          <Argument type="double" name="VF"/>
+          <Argument type="double" name="A"/>
+          <Argument type="double" name="T"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="CalcularDistancia" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Formula3" package="problema_1" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="V0"/>
+          <Argument type="double" name="VF"/>
+          <Argument type="double" name="A"/>
+          <Argument type="double" name="T"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="CalcularDistancia" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Movimiento" package="problema_1" visibility="public" isAbstract="true" xPosition="1520.0" yPosition="20.0">
+      <Fields>
+        <Field name="V0" type="double" visibility="package"/>
+        <Field name="VF" type="double" visibility="package"/>
+        <Field name="A" type="double" visibility="package"/>
+        <Field name="T" type="double" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="V0"/>
+          <Argument type="double" name="VF"/>
+          <Argument type="double" name="A"/>
+          <Argument type="double" name="T"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="CalcularDistancia" returnType="double" visibility="public" isAbstract="true"/>
+        <Method name="getV0" returnType="double" visibility="public"/>
+        <Method name="setV0" returnType="void" visibility="public">
+          <Argument type="double" name="V0"/>
+        </Method>
+        <Method name="getVF" returnType="double" visibility="public"/>
+        <Method name="setVF" returnType="void" visibility="public">
+          <Argument type="double" name="VF"/>
+        </Method>
+        <Method name="getA" returnType="double" visibility="public"/>
+        <Method name="setA" returnType="void" visibility="public">
+          <Argument type="double" name="A"/>
+        </Method>
+        <Method name="getT" returnType="double" visibility="public"/>
+        <Method name="setT" returnType="void" visibility="public">
+          <Argument type="double" name="T"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Apoyo" package="problema_2" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="double" name="salarioBase"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="calcularSalario" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="Captura" package="problema_2" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Methods>
+        <Method name="setNombre" returnType="void" visibility="package">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="setApellido" returnType="void" visibility="package">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="setEdad" returnType="void" visibility="package">
+          <Argument type="int" name="edad"/>
+        </Method>
+        <Method name="setSalarioBase" returnType="void" visibility="package">
+          <Argument type="double" name="salarioBase"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="package"/>
+        <Method name="getApellido" returnType="String" visibility="package"/>
+        <Method name="getEdad" returnType="int" visibility="package"/>
+        <Method name="getSalarioBase" returnType="double" visibility="package"/>
+      </Methods>
+    </Interface>
+    <Class name="Empleados" package="problema_2" visibility="public" isAbstract="true" xPosition="20.0" yPosition="420.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellido" type="String" visibility="private"/>
+        <Field name="edad" type="int" visibility="private"/>
+        <Field name="salarioBase" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="setApellido" returnType="void" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="setEdad" returnType="void" visibility="public">
+          <Argument type="int" name="edad"/>
+        </Method>
+        <Method name="setSalarioBase" returnType="void" visibility="public">
+          <Argument type="double" name="salarioBase"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="getEdad" returnType="int" visibility="public"/>
+        <Method name="getSalarioBase" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Jefe" package="problema_2" visibility="public" xPosition="320.0" yPosition="420.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="double" name="salarioBase"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="calcularSalario" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Manufactura" package="problema_2" visibility="public" xPosition="620.0" yPosition="420.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="double" name="salarioBase"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="calcularSalario" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Administrador" package="problema_3" visibility="public" xPosition="920.0" yPosition="420.0">
+      <Fields>
+        <Field name="porcentajeDelBono" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="porcentajeDelBono"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="id"/>
+          <Argument type="double" name="salario"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getPorcentajeDelBono" returnType="int" visibility="public"/>
+        <Method name="setPorcentajeDelBono" returnType="void" visibility="public">
+          <Argument type="int" name="porcentajeDelBono"/>
+        </Method>
+        <Method name="calcularBono" returnType="double" visibility="public"/>
+        <Method name="calcularSalario" returnType="double" visibility="public"/>
+        <Method name="imprimirDatos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="ElegibleParaBono" package="problema_3" visibility="public" xPosition="1220.0" yPosition="420.0">
+      <Methods>
+        <Method name="calcularBono" returnType="double" visibility="package"/>
+      </Methods>
+    </Interface>
+    <Class name="Empleados" package="problema_3" visibility="public" isAbstract="true" xPosition="1520.0" yPosition="420.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="salario" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="id"/>
+          <Argument type="double" name="salario"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="id"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getSalario" returnType="double" visibility="public"/>
+        <Method name="setSalario" returnType="void" visibility="public">
+          <Argument type="int" name="salario"/>
+        </Method>
+        <Method name="calcularSalario" returnType="double" visibility="public" isAbstract="true"/>
+        <Method name="imprimirDatos" returnType="void" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="EmpleadoTiempoCompleto" package="problema_3" visibility="public" xPosition="1820.0" yPosition="420.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="id"/>
+          <Argument type="double" name="salario"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="calcularSalario" returnType="double" visibility="public"/>
+        <Method name="imprimirDatos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="EmpleadoTiempoParcial" package="problema_3" visibility="public" xPosition="2120.0" yPosition="420.0">
+      <Fields>
+        <Field name="pagoPorHora" type="int" visibility="private"/>
+        <Field name="horasTrabajadas" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="pagoPorHora"/>
+          <Argument type="int" name="horasTrabajadas"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="id"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getPagoPorHora" returnType="int" visibility="public"/>
+        <Method name="setPagoPorHora" returnType="void" visibility="public">
+          <Argument type="int" name="pagoPorHora"/>
+        </Method>
+        <Method name="getHorasTrabajadas" returnType="int" visibility="public"/>
+        <Method name="setHorasTrabajadas" returnType="void" visibility="public">
+          <Argument type="int" name="horasTrabajadas"/>
+        </Method>
+        <Method name="calcularSalario" returnType="double" visibility="public"/>
+        <Method name="imprimirDatos" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="problema_1.Movimiento" target="problema_1.Captura"/>
+    <IsRelation name="is" source="problema_3.EmpleadoTiempoParcial" target="problema_3.Empleados"/>
+    <IsRelation name="is" source="problema_1.Formula2" target="problema_1.Movimiento"/>
+    <IsRelation name="is" source="problema_1.Formula3" target="problema_1.Movimiento"/>
+    <UseRelation source="eva2_examen_practico.EVA2_EXAMEN_PRACTICO" target="problema_3.Empleados" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="problema_2.Empleados" target="problema_2.Captura"/>
+    <IsRelation name="is" source="problema_2.Manufactura" target="problema_2.Empleados"/>
+    <IsRelation name="is" source="problema_2.Apoyo" target="problema_2.Empleados"/>
+    <IsRelation name="is" source="problema_3.Administrador" target="problema_3.EmpleadoTiempoCompleto"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="problema_3.Administrador" target="problema_3.ElegibleParaBono"/>
+    <IsRelation name="is" source="problema_2.Jefe" target="problema_2.Empleados"/>
+    <IsRelation name="is" source="problema_1.Formula1" target="problema_1.Movimiento"/>
+    <IsRelation name="is" source="problema_3.EmpleadoTiempoCompleto" target="problema_3.Empleados"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
